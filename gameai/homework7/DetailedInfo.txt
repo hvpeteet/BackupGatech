@@ -1,0 +1,25 @@
+StartTime = -17
+StompKill:  EnemyType = 1 time = 29
+StompKill:  EnemyType = 2 time = 39
+LittleState: StTime = -17 EdTime = 40
+Totaltime = 57
+Jump:  StTime = 20 EdTime = 40
+Die:  EnemyType = 1
+NEWLEVELSTART
+StartTime = -17
+StompKill:  EnemyType = 1 time = 27
+StompKill:  EnemyType = 1 time = 35
+Jump:  StTime = 15 EdTime = 47
+LittleState: StTime = -17 EdTime = 49
+Totaltime = 66
+Die:  EnemyType = 2
+NEWLEVELSTART
+StartTime = -17
+LittleState: StTime = -17 EdTime = 6
+Totaltime = 23
+Die:  EnemyType = 1
+NEWLEVELSTART
+StartTime = -17
+Totaltime = 594
+RightMove: StTime = -16 EdTime = 593
+LittleState: StTime = -17 EdTime = 577

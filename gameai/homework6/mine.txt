@@ -1,0 +1,57 @@
+print
+(1,)
+(2,)
+20
+22
+(5,)
+(9,)
+11
+12
+31
+35
+None
+run
+execute (1,)
+enter (1,)
+execute (2,)
+enter (2,)
+execute 20
+enter 20
+None
+execute (1,)
+execute (2,)
+execute 22
+enter 22
+None
+execute (1,)
+execute (5,)
+enter (5,)
+execute (9,)
+enter (9,)
+execute 11
+enter 11
+None
+execute (1,)
+execute (5,)
+execute 31
+enter 31
+None
+execute (1,)
+execute (5,)
+execute 35
+enter 35
+None
+execute (1,)
+execute (5,)
+execute 35
+None
+execute (1,)
+execute (5,)
+execute 35
+None
+execute (1,)
+execute (5,)
+execute None
+enter None
+False
+[(20, True), (22, True), (11, False), (31, False), (35, False), (35, False), (35, False), (None, False)]
