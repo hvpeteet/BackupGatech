@@ -1,0 +1,25 @@
+realloc failed
+here is your data 
+Created a socket to use.
+Sending: C is quirk
+Size:10
+got ack
+Sending: y flawed a
+Size:10
+got ack
+Sending: nd an enor
+Size:10
+got ack
+Sending: mous succe
+Size:10
+got ack
+Sending: ss - Denni
+Size:10
+got ack
+Sending: s M. Ritch
+Size:10
+got ack
+Sending: ie
+Size:3
+got ack
+Sent message 0 to server...

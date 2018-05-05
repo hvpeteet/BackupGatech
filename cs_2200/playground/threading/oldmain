@@ -1,0 +1,53 @@
+// #include <pthread.h>
+// #include <stdio.h>
+// #include <unistd.h>
+// #include <stdlib.h>
+// #include "threadsafeLinkedList.h"
+
+// typedef void* (*pthread_func_ptr) (void*);
+
+// void* myPrinter(void* arg);
+// void printInt(void* pdata);
+// void exampleThreads(void);
+
+// void exampleThreads(void) {
+//     pthread_t printer;
+//     pthread_create(&printer, NULL, (pthread_func_ptr) myPrinter, "hello world\n");
+//     pthread_join(printer, NULL);
+
+//     // Note detached thread will die if parent dies.
+//     pthread_t async_printer;
+//     pthread_create(&async_printer, NULL, (pthread_func_ptr) myPrinter, "I am async\n");
+//     pthread_detach(async_printer);
+
+//     sleep(1);
+
+//     printf("printing done\n");
+// }
+
+// void* myPrinter(void* arg) {
+//     sleep(0);
+//     printf("%s", arg);
+//     return NULL;
+// }
+
+// void printInt(void* pdata) {
+//     int data = *((int*) pdata);
+//     printf("[Node: %d], ", data);
+// }
+
+// int main(void) {
+//     linked_list* list = calloc(sizeof(linked_list), 1);
+//     int* a = malloc(sizeof(int));
+//     int* b = malloc(sizeof(int));
+//     int* c = malloc(sizeof(int));
+//     *a = 10;
+//     *b = 11;
+//     *c = 12;
+//     addToHead(list, a);
+//     addToHead(list, b);
+//     addToTail(list, c);
+//     printf("Size: %d, [%d, %d, %d]", list->size, (*(int*)removeFromHead(list)), (*(int*)removeFromHead(list)), (*(int*)removeFromHead(list)));
+//     printf("\n");
+//     freeLinkedList(list);
+// }

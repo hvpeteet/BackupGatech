@@ -1,0 +1,9 @@
+The BONJ instruction will load data from the most recent keyboard interupt into the memory location rx + ry. 
+
+Example
+if  a1 = 0x3000
+and a2 = 0x0044
+
+BONJ $a1, $a2
+
+would store the most recent keyboard data into the address x3044

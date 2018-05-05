@@ -1,0 +1,42 @@
+CS 2200 Fall 2015
+Project 6
+Name: Henry Peteet
+GT Number: 902986827
+
+Problem 1B
+----------
+
+| #CPUs | Ex time |
+-------------------
+| 1     |  68     |
+| 2     |  36     |
+| 4     |  33     |
+
+This does not decrease linearly since (IO + execution time) is a minimum time that must be spent. You can see this by the fact that time spent in ready state hits a minimum of around 0 (around 4 cores) as we add cores, if we go up to 8 or 16 cores you can see this even more drastically.
+
+We hit a minimum execution time that is equal to the longest time it would take any one process running alone on a single core.
+
+Problem 2B
+----------
+
+| slice | waiting |
+-------------------
+| 8     |  333    |
+| 6     |  316    |
+| 4     |  310    |
+| 2     |  295    |
+
+This always decreases wait time with smaller time slices but on a real processor this would not always decrease as a context switch would take time.
+
+Problem 3B
+----------
+
+| strategy | waiting time |
+---------------------------
+| FIFO     |   390        |
+| ROBIN    |   295        |
+| PRIORITY |   280        |
+
+Priority is the closest approximation to SJF because we gave priority to shorter jobs in the tester. If this was reversed our priorities we would get a waiting time of around 355.
+
+In general round-robin reliably gives the closes approximation to SJF, but in this case because of our priorities happen to line up roughly with CPU time this gives the priority scheduler a leg up.
