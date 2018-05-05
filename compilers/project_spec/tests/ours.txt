@@ -1,0 +1,74 @@
+Running typechecking tests
+-----Phase2/array_assign_to_array_length_mismatch_is_ok.tgr: passed
+-----Phase2/array_assign_to_array_ok.tgr: passed
+-----Phase2/array_both_sides_assign_ok.tgr: passed
+-----Phase2/array_multidemnsional_ok.tgr: passed
+-----Phase2/array_right_side_ok.tgr: passed
+-----Phase2/array_simple_assign_ok.tgr: passed
+-----Phase2/assign_types_play_2_ok.tgr: passed
+-----Phase2/assign_types_play_ok.tgr: passed
+-----Phase2/boolexpr_test_2_ok.tgr: passed
+-----Phase2/boolexpr_test_3_ok.tgr: passed
+-----Phase2/boolexpr_test_ok.tgr: passed
+-----Phase2/break_ok.tgr: passed
+-----Phase2/call_nostore_ok.tgr: passed
+-----Phase2/call_ok.tgr: passed
+-----Phase2/expr_array_ok.tgr: passed
+-----Phase2/expr_custom_and_standard_types_ok.tgr: passed
+-----Phase2/expr_custom_types_ok.tgr: passed
+-----Phase2/expr_int_simple_ok.tgr: passed
+-----Phase2/expr_mix_float_int_ok.tgr: passed
+-----Phase2/expr_more_types_ok.tgr: passed
+-----Phase2/for_ok.tgr: passed
+-----Phase2/func_arg_shadows_ok.tgr: passed
+-----Phase2/func_arg_types_ok.tgr: passed
+-----Phase2/func_std_lib_ok.tgr: passed
+-----Phase2/if_ok.tgr: passed
+-----Phase2/ifelse_ok.tgr: passed
+-----Phase2/return_2_ok.tgr: passed
+-----Phase2/return_ok.tgr: passed
+-----Phase2/type_dec_bef_use_ok.tgr: passed
+-----Phase2/var_init_2_ok.tgr: passed
+-----Phase2/var_init_3_ok.tgr: passed
+-----Phase2/var_init_ok.tgr: passed
+-----Phase2/var_type_bef_use_ok.tgr: passed
+-----Phase2/while_ok.tgr: passed
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!! No False Positives!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+-----Phase2/array_assign_to_array_type_mismatch_2_bad.tgr: variable assignment has incompatible types
+-----Phase2/array_assign_to_array_type_mismatch_bad.tgr: variable assignment has incompatible types
+-----Phase2/array_float_index_bad.tgr: array index not an integer
+-----Phase2/array_type_mismatch_bad.tgr: variable assignment has incompatible types
+-----Phase2/assign_type_mismatch_bad.tgr: variable assignment has incompatible types
+-----Phase2/boolexpr_test_2_bad.tgr: Parser failure: unexpected token: "|" in token stream at index 9
+-----Phase2/boolexpr_test_3_bad.tgr: Parser failure: unexpected token: "=" in token stream at index 11
+-----Phase2/boolexpr_test_bad.tgr: Parser failure: unexpected token: "then" in token stream at index 13
+-----Phase2/break_bad.tgr: illegal break, not inside any loops
+-----Phase2/call_arg_count_mismatch_bad.tgr: missing function parameters
+-----Phase2/call_arg_type_mismatch_bad.tgr: invalid parameter to function magic
+-----Phase2/call_shouldnt_assign_bad.tgr: variable assignment has incompatible types
+-----Phase2/call_type_mismatch_bad.tgr: variable assignment has incompatible types
+-----Phase2/expr_array_unindexed_bad.tgr: non numeric operand to operator
+-----Phase2/expr_more_types_bad.tgr: variable assignment has incompatible types
+-----Phase2/for_float_end_bad.tgr: non-integer range in for loop
+-----Phase2/for_float_index_bad.tgr: variable assignment has incompatible types
+-----Phase2/for_float_start_bad.tgr: non-integer range in for loop
+-----Phase2/for_index_undecl_bad.tgr: variable "pescado" is used but not declared
+-----Phase2/func_arg_types_bad.tgr: Parser failure: unexpected token: "var" in token stream at index 20
+-----Phase2/func_argnames_conflict_bad.tgr: two params have the same name "n"
+-----Phase2/func_redecls_bad.tgr: The function name "zambia" is used twice
+-----Phase2/func_ret_type_defined_bad.tgr: Type "muchacho" used but not declared 
+-----Phase2/if_bad.tgr: Parser failure: unexpected token: "then" in token stream at index 9
+-----Phase2/ifelse_bad.tgr: Parser failure: unexpected token: "then" in token stream at index 9
+-----Phase2/return_but_shouldnt_bad.tgr: invalid return type for function chubacca
+-----Phase2/return_global_bad.tgr: using return statement outside of function
+-----Phase2/return_type_mismatch_bad.tgr: invalid return type for function chubacca
+-----Phase2/type_dec_bef_use_bad.tgr: Unresolvable type declarations [(typedecl type platypus := (type bird) ;)]
+-----Phase2/type_redecls_bad.tgr: Same alias used twice platypus
+-----Phase2/var_init_2_bad.tgr: initializing variable with incompatible type
+-----Phase2/var_init_bad.tgr: initializing variable with incompatible type
+-----Phase2/var_redecls_bad.tgr: the variable name "boberto" is used twice
+-----Phase2/var_type_bef_use_bad.tgr: Type "llama" used but not declared 
+-----Phase2/while_float_cond_bad.tgr: Parser failure: unexpected token: "do" in token stream at index 11
+-----Phase2/while_int_cond_bad.tgr: Parser failure: unexpected token: "do" in token stream at index 11

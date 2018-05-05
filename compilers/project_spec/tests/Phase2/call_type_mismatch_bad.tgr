@@ -1,0 +1,8 @@
+let
+    var gimme_some : int;
+    func magic() : float begin
+        return 42.7;
+    end;
+in
+    gimme_some := magic();
+end

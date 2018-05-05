@@ -1,0 +1,8 @@
+let
+    type pokemon := int;
+    var meowth : pokemon := 1;
+    var pikachu : pokemon := 7;
+    var dragonite : pokemon := 8;
+in
+    meowth := pikachu + 7;
+end

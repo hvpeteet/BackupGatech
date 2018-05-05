@@ -1,0 +1,16 @@
+let
+    var n : int := 42;
+    func do_nothing(n:int) begin
+        n := n + 1;
+    end;
+    func return_it(n:int) : int begin
+        do_nothing(n);
+        return(n);
+    end;
+in
+    printi(n);
+    do_nothing(n);
+    printi(n);
+    n := return_it(5);
+    printi(n);
+end

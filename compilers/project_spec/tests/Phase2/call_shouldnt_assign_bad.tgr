@@ -1,0 +1,8 @@
+let
+    var dumbo : int;
+    func magic() begin
+        dumbo := 1;
+    end;
+in
+    dumbo := magic();
+end

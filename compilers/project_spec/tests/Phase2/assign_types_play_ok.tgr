@@ -1,0 +1,8 @@
+let
+    type digimon := int;
+    type pokemon := int;
+    var abra : pokemon := 1;
+    var agumon : digimon := 7;
+in
+    abra := abra + agumon;
+end

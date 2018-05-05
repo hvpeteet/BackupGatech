@@ -1,0 +1,6 @@
+let
+    var sardines : array[10] of float;
+    var starmie : float;
+in
+    starmie := 1 + starmie + sardines;
+end

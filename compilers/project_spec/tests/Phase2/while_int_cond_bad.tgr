@@ -1,0 +1,7 @@
+let
+    var the_brain : int := 9001;
+in
+    while 100 do
+        the_brain := the_brain / 2;
+    enddo;
+end

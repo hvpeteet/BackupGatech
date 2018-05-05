@@ -1,0 +1,8 @@
+let
+    var dumbo : int;
+    func quepasa() : muchacho begin
+            return 1;
+    end;
+in
+    dumbo := 1;
+end

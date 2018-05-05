@@ -1,0 +1,15 @@
+let
+        type int_arr := array [2] of array [3] of int;
+        var alpha : int_arr;
+        var a, b : array [100] of int;
+        var i : int;
+        var c, d, e : float := 3.5;
+in
+        for i := 3 to 6 do
+                a[i] := readi();
+        enddo;
+        for i := 3 to 6 do
+                printi(a[i] * 2);
+        enddo;
+        e := c + d;
+end

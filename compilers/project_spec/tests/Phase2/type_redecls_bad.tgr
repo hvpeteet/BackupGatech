@@ -1,0 +1,7 @@
+let
+    type platypus := int;
+    type platypus := int;
+    var dumbo : int;
+in
+    dumbo := 1;
+end

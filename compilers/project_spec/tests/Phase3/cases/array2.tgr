@@ -1,0 +1,15 @@
+let
+        type arr5 := array [5] of int;
+        var a, b : arr5;
+        var i : int;
+in
+        for i := 0 to 5 do
+            a[i] := i;
+            b[i] := 2 * i;
+        enddo;
+        printi(a[3]);
+        a[3] := b[1];
+        printi(a[3]);
+        a := b;
+        printi(a[3]);
+end

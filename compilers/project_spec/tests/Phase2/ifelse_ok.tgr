@@ -1,0 +1,9 @@
+let
+    var dumbo : int;
+in
+    if 0 = 0 then
+        dumbo := 1;
+    else
+        dumbo := 1;
+    endif;
+end

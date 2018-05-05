@@ -1,0 +1,13 @@
+let
+        var a, b : int;
+        var res : int;
+in
+    a := readi();
+    b := readi();
+    if a = b then
+        res := 1;
+    else
+        res := 0;
+    endif;
+    printi(res);
+end

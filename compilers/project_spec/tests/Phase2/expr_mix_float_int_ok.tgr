@@ -1,0 +1,5 @@
+let
+    var starmie : float;
+in
+    starmie := 1 + 1 - 1.0;
+end

@@ -1,0 +1,7 @@
+1,2c1,3
+< printi: 0
+< printi: 12
+---
+> readi: readi: readi: printi: 6
+> printi: 26
+> printi: 4

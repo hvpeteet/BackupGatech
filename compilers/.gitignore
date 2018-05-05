@@ -1,0 +1,8 @@
+*.class
+build/
+.gradle/
+*.DS_STORE
+debugMain.txt
+project_spec/tests/feedback.txt
+compiler.jar
+submission.tar.gz

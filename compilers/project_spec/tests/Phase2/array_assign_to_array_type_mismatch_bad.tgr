@@ -1,0 +1,6 @@
+let
+    var sardines : array[10] of int;
+    var cans : array[10] of float;
+in
+    sardines := cans;
+end

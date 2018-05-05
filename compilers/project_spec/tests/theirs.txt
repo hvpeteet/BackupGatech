@@ -1,0 +1,110 @@
+Running typechecking tests
+-----Phase2/array_assign_to_array_length_mismatch_is_ok.tgr: passed
+-----Phase2/array_assign_to_array_ok.tgr: passed
+-----Phase2/array_both_sides_assign_ok.tgr: passed
+-----Phase2/array_multidemnsional_ok.tgr: passed
+-----Phase2/array_right_side_ok.tgr: passed
+-----Phase2/array_simple_assign_ok.tgr: passed
+-----Phase2/assign_types_play_2_ok.tgr: passed
+-----Phase2/assign_types_play_ok.tgr: passed
+-----Phase2/boolexpr_test_2_ok.tgr: passed
+-----Phase2/boolexpr_test_3_ok.tgr: passed
+-----Phase2/boolexpr_test_ok.tgr: passed
+-----Phase2/break_ok.tgr: passed
+-----Phase2/call_nostore_ok.tgr: passed
+-----Phase2/call_ok.tgr: passed
+-----Phase2/expr_array_ok.tgr: passed
+-----Phase2/expr_custom_and_standard_types_ok.tgr: passed
+-----Phase2/expr_custom_types_ok.tgr: passed
+-----Phase2/expr_int_simple_ok.tgr: passed
+-----Phase2/expr_mix_float_int_ok.tgr: passed
+-----Phase2/expr_more_types_ok.tgr: passed
+-----Phase2/for_ok.tgr: passed
+-----Phase2/func_arg_shadows_ok.tgr: passed
+-----Phase2/func_arg_types_ok.tgr: passed
+-----Phase2/func_std_lib_ok.tgr: passed
+-----Phase2/if_ok.tgr: passed
+-----Phase2/ifelse_ok.tgr: passed
+-----Phase2/return_2_ok.tgr: passed
+-----Phase2/return_ok.tgr: passed
+-----Phase2/type_dec_bef_use_ok.tgr: passed
+-----Phase2/var_init_2_ok.tgr: passed
+-----Phase2/var_init_3_ok.tgr: passed
+-----Phase2/var_init_ok.tgr: passed
+-----Phase2/var_type_bef_use_ok.tgr: passed
+-----Phase2/while_ok.tgr: passed
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!! No False Positives!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+-----Phase2/array_assign_to_array_type_mismatch_2_bad.tgr: Incompatible types on line 5, index 13: cans := sardines;
+                                                ^
+-----Phase2/array_assign_to_array_type_mismatch_bad.tgr: Incompatible types on line 5, index 17: sardines := cans;
+                                                    ^
+-----Phase2/array_float_index_bad.tgr: Array index must be an integer type on line 4, index 14: sardines[10.5] := 999;
+                                                                  ^
+-----Phase2/array_type_mismatch_bad.tgr: Incompatible types on line 5, index 12: can := sardines[8];
+                                               ^
+-----Phase2/assign_type_mismatch_bad.tgr: Incompatible types on line 4, index 15: meowth := 1.0;
+                                                  ^
+-----Phase2/boolexpr_test_2_bad.tgr: Unexpected token '|' on line 4, index 10: if 1 | 1 < 1 then
+                                               ^
+-----Phase2/boolexpr_test_3_bad.tgr: Unexpected token '=' on line 4, index 11: if 0=0=0 then
+                                                ^
+-----Phase2/boolexpr_test_bad.tgr: Unexpected token 'then' on line 4, index 18: if 1 > 1 & 1 then
+                                                          ^
+-----Phase2/break_bad.tgr: Illegal break, not inside any loops on line 4, index 5: break;
+                                                        ^
+-----Phase2/call_arg_count_mismatch_bad.tgr: Missing arguments to function on line 6, index 5: magic();
+                                                  ^
+-----Phase2/call_arg_type_mismatch_bad.tgr: Incompatible types on line 6, index 11: magic(1.5);
+                                              ^
+-----Phase2/call_shouldnt_assign_bad.tgr: Function does not return a value on line 7, index 14: dumbo := magic();
+                                                               ^
+-----Phase2/call_type_mismatch_bad.tgr: Return type incompatible with left-hand side type on line 7, index 19: gimme_some := magic();
+                                                                                     ^
+-----Phase2/expr_array_unindexed_bad.tgr: Operator can only be applied on numeric types on line 5, index 30: starmie := 1 + starmie + sardines;
+                                                                                            ^
+-----Phase2/expr_more_types_bad.tgr: Incompatible types on line 7, index 13: abra := abra + agumon;
+                                                ^
+-----Phase2/for_float_end_bad.tgr: Type of expression does not match type of iterating variable on line 5, index 25: for pescado := 1 to 100.0 do
+                                                                                                      ^
+-----Phase2/for_float_index_bad.tgr: Iterating variable must be of integer type on line 5, index 9: for pescado := 1.4 to 100.0 do
+                                                                   ^
+-----Phase2/for_float_start_bad.tgr: Type of expression does not match type of iterating variable on line 5, index 20: for pescado := 1.0 to 100 do
+                                                                                                 ^
+-----Phase2/for_index_undecl_bad.tgr: Undeclared variable on line 4, index 9: for pescado := 1.4 to 100.0 do
+                                            ^
+-----Phase2/func_arg_types_bad.tgr: Unexpected token 'var' on line 5, index 5: var dumbo : int;
+                                           ^
+-----Phase2/func_argnames_conflict_bad.tgr: Argument previously declared on line 3, index 29: func return_it(n : int, n : float) : int begin
+                                                                          ^
+-----Phase2/func_redecls_bad.tgr: Function previously declared on line 6, index 10: func zambia(n : int) : int begin
+                                                       ^
+-----Phase2/func_ret_type_defined_bad.tgr: Unknown type on line 3, index 22: func quepasa() : muchacho begin
+                                                   ^
+-----Phase2/if_bad.tgr: Unexpected token 'then' on line 4, index 11: if 42 then
+                                                   ^
+-----Phase2/ifelse_bad.tgr: Unexpected token 'then' on line 4, index 10: if 0 then
+                                                  ^
+-----Phase2/return_but_shouldnt_bad.tgr: Illegal return statement on line 4, index 9: return 1;
+                                             ^
+-----Phase2/return_global_bad.tgr: Illegal return statement on line 4, index 5: return 1;
+                                             ^
+-----Phase2/return_type_mismatch_bad.tgr: Type of returned expression does not match return type on line 4, index 16: return 1.5;
+                                                                                   ^
+-----Phase2/type_dec_bef_use_bad.tgr: Unknown type on line 2, index 22: type platypus := bird;
+                                                   ^
+-----Phase2/type_redecls_bad.tgr: Type previously declared on line 3, index 10: type platypus := int;
+                                                   ^
+-----Phase2/var_init_2_bad.tgr: Incompatible types on line 2, index 39: var boberto : array[10] of int := 1;
+                                                                          ^
+-----Phase2/var_init_bad.tgr: Incompatible types on line 2, index 26: var boberto : int := 1.5;
+                                                             ^
+-----Phase2/var_redecls_bad.tgr: Variable previously declared on line 3, index 9: var boberto : int;
+                                                     ^
+-----Phase2/var_type_bef_use_bad.tgr: Unknown type on line 2, index 19: var boberto : llama;
+                                                ^
+-----Phase2/while_float_cond_bad.tgr: Unexpected token 'do' on line 4, index 18: while 100.5  do
+                                                        ^
+-----Phase2/while_int_cond_bad.tgr: Unexpected token 'do' on line 4, index 15: while 100 do
+                                                     ^

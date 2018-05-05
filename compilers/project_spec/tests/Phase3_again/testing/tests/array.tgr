@@ -1,0 +1,12 @@
+let
+        type int_arr := array [100] of int;
+        var a : int_arr;
+        var i : int;
+in
+        for i := 3 to 6 do
+                a[i] := readi();
+        enddo;
+        for i := 3 to 6 do
+                printi(a[i] * 2);
+        enddo;
+end

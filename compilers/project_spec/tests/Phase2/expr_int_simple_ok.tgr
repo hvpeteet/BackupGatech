@@ -1,0 +1,5 @@
+let
+    var kaladin_stormblessed : int;
+in
+    kaladin_stormblessed := 1 + 1;
+end

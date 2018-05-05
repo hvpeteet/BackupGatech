@@ -1,0 +1,9 @@
+let
+    var mosiotunia : int;
+    var kosamba : float;
+in
+    printi(42);
+    printf(43.5);
+    mosiotunia := readi();
+    kosamba := readf();
+end

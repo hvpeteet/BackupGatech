@@ -1,0 +1,9 @@
+let
+    type digimon := float;
+    type pokemon := float;
+    var shedinja : pokemon := 1.5;
+    var gabumon : digimon := 7.3;
+in
+    shedinja := gabumon;
+    gabumon := shedinja;
+end

@@ -1,0 +1,64 @@
+data:
+    decint, x, 7
+    decint, y
+    decfloat, a, 3.1415
+    decfloat, b
+    decintarr, 10, array1, 42
+    decintarr, 7, array2, 73
+    decintarr, 15, array3, 999
+    decint, two, 2
+double: x=int
+    loadi, x, $i4
+    addi, $i5, $i4, $i4
+    reti, $i5
+sum: x=int,y=int
+    loadi, x, $i8
+    loadi, y, $i9
+    addi, $i10, $i8, $i9
+    reti, $i10
+main:
+    debug, adding 7 + input
+    call_ret, readi, $i0
+    storei, $i0, y
+    loadi, x, $i1
+    loadi, y, $i2
+    addi, $i3, $i1, $i2
+    call, printi, $i1
+    call, printi, $i2
+    call, printi, $i3
+part2:
+    debug, adding 3.1415 + input
+    call_ret, readf, $f0
+    storef, $f0, b
+    loadf, a, $f1
+    loadf, b, $f2
+    addf, $f3, $f1, $f2
+    call, printf, $f1
+    call, printf, $f2
+    call, printf, $f3
+part3:
+    debug, doubling
+    call_ret, readi, $i6
+    call_ret, double, $i7, $i6
+    call, printi, $i7
+part4:
+    debug, summing
+    call_ret, readi, $i11
+    call_ret, readi, $i12
+    call_ret, sum, $i13, $i11, $i12
+    call, printi, $i13
+part5:
+    debug, address of array1
+    loadi, array1, $i14
+    call, printi, $i14
+    debug, address of array2
+    loadi, array2, $i15
+    call, printi, $i15
+    debug, address of array3
+    loadi, array3, $i99
+    call, printi, $i99
+    debug, value of array1[2]
+    loadi, two, $i16
+    loadarri, array1, $i16, $i17
+    call, printi, $i17
+    ret

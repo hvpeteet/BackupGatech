@@ -1,0 +1,7 @@
+let
+    type llama := int;
+    var frida : llama;
+    var dumbo : int;
+in
+    dumbo := 1;
+end

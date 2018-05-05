@@ -1,0 +1,20 @@
+let
+    var a, b, c : int;
+    var d, e, f : float;
+    var in2 : float;
+
+    func factf ( n : float ) : float begin
+        if n <= 0 then
+            return 1;
+        endif;
+        if n <= 1 then
+            return 1;
+        endif;
+        d := factf(n - 1);
+        return n * d;
+    end;
+in
+    in2 := readf();
+    f := factf(in2);
+    printf(f);
+end

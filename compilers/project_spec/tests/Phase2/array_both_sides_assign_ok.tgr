@@ -1,0 +1,5 @@
+let
+    var sardines : array[10] of int;
+in
+    sardines[9] := sardines[8];
+end

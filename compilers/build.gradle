@@ -1,0 +1,34 @@
+apply plugin: 'java'
+
+apply plugin: 'checkstyle'
+
+apply plugin: 'application'
+defaultTasks 'run'
+
+mainClassName = 'compiler.Main'
+version = '1.0'
+
+jar {
+  manifest {
+    attributes('Implementation-Title': '4240 Compiler',
+               'Implementation-Version': version,
+               'Main-CLass': mainClassName,
+    )
+  }
+  baseName "4240"
+  from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
+}
+
+repositories {
+  mavenCentral()
+}
+
+checkstyle {
+  toolVersion = "6.11"
+  configFile = file("${rootDir}/config/checkstyle/checkstyle.xml")
+  configProperties = [samedir: "${rootDir}/config/checkstyle"]
+}
+
+dependencies {
+  testCompile 'junit:junit:4.12'
+}

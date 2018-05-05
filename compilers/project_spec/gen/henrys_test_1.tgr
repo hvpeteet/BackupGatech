@@ -1,0 +1,11 @@
+let
+    func foo ( ) : int begin
+        a_var[some_offset / some_value] := b_var [some_value];
+        if some_value < some_other_value then
+            some_func();
+            some_var := some_other_func();
+        endif;
+    end;
+in
+    some_var := some_other_var;
+end

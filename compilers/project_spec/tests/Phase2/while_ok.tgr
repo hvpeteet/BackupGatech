@@ -1,0 +1,9 @@
+let
+        var pinky, the_brain : int;
+in
+        pinky := 1;
+        the_brain := 9001;
+        while pinky < 100  do
+               the_brain := the_brain / 2;
+        enddo;
+end

@@ -1,0 +1,7 @@
+let
+    func magic(n : int) : int begin
+        return 42;
+    end;
+in
+    magic(1.5);
+end

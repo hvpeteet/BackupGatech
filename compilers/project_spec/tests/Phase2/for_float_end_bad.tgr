@@ -1,0 +1,8 @@
+let
+    var pescado : int;
+    var carne : int;
+in
+    for pescado := 1 to 100.0 do
+        carne := pescado;
+    enddo;
+end

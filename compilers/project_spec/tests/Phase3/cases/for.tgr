@@ -1,0 +1,9 @@
+let
+    var count : int := 5;
+    var start : int := 3;
+    var i : int;
+in
+    for i := start to start + count do
+        printi(i);
+    enddo;
+end

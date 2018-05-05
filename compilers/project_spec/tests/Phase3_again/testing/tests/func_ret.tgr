@@ -1,0 +1,10 @@
+let
+	var b : int := 5;
+	func t8 ( n : int ) : int begin
+		return n * 8;
+	end;
+in
+    printi(b);
+	b := t8(b);
+	printi(b);
+end

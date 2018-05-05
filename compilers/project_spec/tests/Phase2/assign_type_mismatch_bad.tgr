@@ -1,0 +1,5 @@
+let
+    var meowth : int;
+in
+    meowth := 1.0;
+end

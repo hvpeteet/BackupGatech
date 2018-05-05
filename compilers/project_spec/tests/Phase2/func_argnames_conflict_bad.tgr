@@ -1,0 +1,8 @@
+let
+    var dumbo : int;
+    func return_it(n : int, n : float) : int begin
+        return 1;
+    end;
+in
+    dumbo := 1;
+end

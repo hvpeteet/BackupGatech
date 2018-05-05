@@ -1,0 +1,10 @@
+let
+    var t1, t2 : array[10] of int;
+    var a : array[5] of array[10] of int;
+in
+    t1 := a[3];
+    t1[9] := 37;
+    t2 := a[4];
+    t2[0] := 33;
+    printi(t1[9] + t2[0]);
+end

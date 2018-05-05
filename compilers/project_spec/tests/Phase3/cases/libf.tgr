@@ -1,0 +1,7 @@
+let
+    var count : float;
+in
+    count := readf();
+    count := count + 1.5;
+    printf(count);
+end

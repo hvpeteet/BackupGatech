@@ -1,0 +1,8 @@
+let
+    var a : array[10] of int;
+    var b : array[20] of array[10] of int;
+    var c : int;
+in
+    a := b[4];
+    c := a[10];
+end
