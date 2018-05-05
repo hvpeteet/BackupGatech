@@ -1,0 +1,6 @@
+Correctness (50) - 50
+Report (35) - 29
+Code Quality (15) - 13
+-------------------------
+"Report - Didn't have enough details about parallelisation
+Code Quality - OCaml and Go had no documentation"

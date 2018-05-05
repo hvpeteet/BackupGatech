@@ -1,0 +1,96 @@
++------------+
+| Semaphores |
++------------+
+
+Representation:
+    m : monitor
+        n     : int
+        pos_n : cond_var
+
+V :
+    n++
+    if n <= 0
+        signal(pos_n)
+
+P :
+    n--
+    if n < 0
+        wait(pos_n)
+
++--------------------------------------------+
+| Conditional Critical Regions with Monitors |
++--------------------------------------------+
+
+Representation:
+    m       : monitor
+        waiting : int = 0
+        changed : cond_var
+        cond    : func void -> bool
+        R       : func void -> void
+
+Each region "R" is transformed into a method of that monitor.
+
+crit_region_n:
+    A: if cond
+            R()
+            if waiting > 0
+                signal(changed)
+        else
+            waiting ++
+            wait(cond_var)
+            waiting --
+            goto A
+
++----------------------------------------------+
+| Semaphores with Conditional Critical Regions |
++----------------------------------------------+
+
+Representation:
+    x : int
+
+P : critical_region(x): x >= 0
+    x--
+
+V : critical_region(x): no cond/true
+    x++
+
++-----------------------------------+
+| Blocking channels with semaphores |
++-----------------------------------+
+
+I am assuming blocking channels are not buffered so they only have 1 element at a time
+
+Representation:
+    val : value
+    s   : semaphore = 1
+    r   : semaphore = 0
+
+send(x : value)
+    P(s)
+    val = x
+    V(r)
+    // to make sure we don't continue until x is received
+    P(s)
+    V(s)
+
+receive
+    tmp : val
+    P(r)
+    tmp = val
+    V(s)
+    return tmp
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

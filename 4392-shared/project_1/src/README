@@ -1,0 +1,8 @@
+Each folder has 4 make targets.
+
+compile: creates an executable (if it is interpreted this is a nop)
+clean: remove any compiled files, but not the executable
+run: builds, runs, and cleans up
+measure: runs and measures the target's usage via /usr/bin/time
+
+The default/all is to compile.
