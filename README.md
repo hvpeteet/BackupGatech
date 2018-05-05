@@ -1,0 +1,2 @@
+# BackupGatech
+Since I graduated my credentials will expire with gatech and I need somewhere to store my old class data. I think all of these classes have changed their assignments by now so I don't feel bad making this public to save money :). If you are a student, teacher, or TA for any of these classes and notice an assignment that is still in use please email me at hvpeteet@gmail.com and I will take it down ASAP.
